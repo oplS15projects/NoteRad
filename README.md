@@ -13,9 +13,9 @@ Our end-product will be a text editing application that will provide the followi
 
 Screenshot
 
-![Alt text](/relative/path/to/NoteRad_b4_save.jpg?raw=true "Before Save")
-![Alt text](/relative/path/to/NoteRad_on_save.jpg?raw=true "On Save")
-![Alt text](/relative/path/to/NoteRad_after_save.jpg?raw=true "After Save")
+![Alt text](./NoteRad_b4_save.jpg?raw=true "Before Save")
+![Alt text](./NoteRad_on_save.jpg?raw=true "On Save")
+![Alt text](./NoteRad_after_save.jpg?raw=true "After Save")
 
 Concepts Demonstrated
 
