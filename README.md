@@ -13,9 +13,9 @@ Our end-product will be a text editing application that will provide the followi
 
 Screenshot
 
-(insert a screenshot here. You may opt to get rid of the title for it. You need at least one screenshot. Make it actually appear here, don't just add a link.)
-
-Here's a demonstration of how to display an image that's uploaded to this repo: screenshot showing env diagram
+![Alt text](/relative/path/to/NoteRad_b4_save.jpg?raw=true "Before Save")
+![Alt text](/relative/path/to/NoteRad_on_save.jpg?raw=true "On Save")
+![Alt text](/relative/path/to/NoteRad_after_save.jpg?raw=true "After Save")
 
 Concepts Demonstrated
 
