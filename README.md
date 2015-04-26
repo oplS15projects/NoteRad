@@ -1,9 +1,58 @@
-# NoteRad
+FP7-webpage NoteRad
+This is a template for using your repo's README.md as your project web page. I recommend you copy and paste into your README file. Delete this line and the one above it, customize everything else. Make it look good!
 
-4/13/15
+Authors
 
-Milestone1 contains a file frame.rkt that creates a frame, a button, and a menu-bar using racket/gui. A lot of work remains to be done, including actually displaying the menu bar and creating a text pane.
+Neel Tripathi
+Muthuraman Lakshmanan
+Ajay Kumar
+
+Overview
+
+Our end-product will be a text editing application that will provide the following functionality: saving, opening, and creating new text files, copyying/pasting text into the application, and word wrapping.
+
+Screenshot
+
+![Alt text](./NoteRad_b4_save.jpg?raw=true "Before Save")
+![Alt text](./NoteRad_on_save.jpg?raw=true "On Save")
+![Alt text](./NoteRad_after_save.jpg?raw=true "After Save")
+
+Concepts Demonstrated
+
+Data Abstraction - We used pre-existing library procedures in our design without knowing exactly what code was hidden under the hood. 
+Object Oriented Programming - We constructed an object and used encapsulated member procedures and attributes in designing the application.
 
 
-4/19/15
-Milestone2 contains a racket file called menu-bar.rkt, first of all it displays the menu bar, which adds functionalities such as cut, copy, paste, select all, delete to the frame. Also it adds functionalities such as changing the font size, style, color, alignment, weight and underline. Menu items it adds are, File, Edit, Font and Help. Now the user can interact with the NoteRad application. Now functionalities such as New, Open, Save, Save As, Exit and About NoteRad has to be implemented in the future. 
+We utilized [The Racket Graphical Interface Toolkit](http://docs.racket-lang.org/gui/) to create a windowing toolbox and an editor toolbox. The window contained the frame in which the meat of the application exists. Inside the frame is an editor class which implements the functionality of handling textual input. 
+
+
+Favorite Lines of Code
+
+Neel
+
+This expression opens a save dialog window. It demonstrates the concept of data abstraction, as the save-file procedure is a high-level abstraction designed to shield the user from low-level implementation details. 
+
+(send editor save-file
+                       (send editor get-filename) 'text)
+
+Each team member should identify a favorite line of code, expression, or procedure written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody? Remember code looks something like this:
+
+(map (lambda (x) (foldr compose functions)) data)
+Lillian (another team member)
+
+This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
+
+(let* ((expr (convert-to-regexp (read-line my-in-port)))
+             (matches (flatten
+                       (hash-map *words*
+                                 (lambda (key value)
+                                   (if (regexp-match expr key) key '()))))))
+  matches)
+Additional Remarks
+
+Anything else you want to say in your report. Can rename or remove this section.
+
+How to Download and Run
+You may want to link to your latest release for easy downloading by people (such as Mark).
+
+Include what file to run, what to do with that file, how to interact with the app when its running, etc.
