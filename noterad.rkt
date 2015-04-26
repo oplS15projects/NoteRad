@@ -67,8 +67,7 @@
                    (send editor set-filename #f)
                    (send note-gui set-label
                          (string-append "*Untitled"
-                                        app-name
-                                        ver))))))
+                                        ))))))
 
 (new menu-item%
      (label "&Open")

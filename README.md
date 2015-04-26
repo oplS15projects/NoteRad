@@ -19,18 +19,21 @@ Screenshot
 
 Concepts Demonstrated
 
-Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient.
+Data Abstraction - We used pre-existing library procedures in our design without knowing exactly what code was hidden under the hood. 
+Object Oriented Programming - We constructed an object and used encapsulated member procedures and attributes in designing the application.
 
-Data abstraction is used to provide access to the elements of the RSS feed.
-The objects in the OpenGL world are represented with recursive data structures.
-Symbolic language processing techniques are used in the parser.
-External Technology and Libraries
 
-Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
+We utilized [The Racket Graphical Interface Toolkit](http://docs.racket-lang.org/gui/) to create a windowing toolbox and an editor toolbox. The window contained the frame in which the meat of the application exists. Inside the frame is an editor class which implements the functionality of handling textual input. 
+
 
 Favorite Lines of Code
 
-Mark (a team member)
+Neel
+
+This expression opens a save dialog window. It demonstrates the concept of data abstraction, as the save-file procedure is a high-level abstraction designed to shield the user from low-level implementation details. 
+
+(send editor save-file
+                       (send editor get-filename) 'text)
 
 Each team member should identify a favorite line of code, expression, or procedure written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody? Remember code looks something like this:
 
