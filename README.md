@@ -9,7 +9,7 @@ Ajay Kumar
 
 Overview
 
-Our end-product will be a text editing application that will provide the following functionality: saving, opening, and creating new text files, copyying/pasting text into the application, and word wrapping.
+Our end-product is a text editing application that will provide the following functionality: saving, opening, and creating new text files, copyying/pasting text into the application, and word wrapping.
 
 Screenshot
 
