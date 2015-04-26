@@ -1,9 +1,55 @@
-# NoteRad
+FP7-webpage NoteRad
+This is a template for using your repo's README.md as your project web page. I recommend you copy and paste into your README file. Delete this line and the one above it, customize everything else. Make it look good!
 
-4/13/15
+Authors
 
-Milestone1 contains a file frame.rkt that creates a frame, a button, and a menu-bar using racket/gui. A lot of work remains to be done, including actually displaying the menu bar and creating a text pane.
+Neel Tripathi
+Muthuraman Lakshmanan
+Ajay Kumar
 
+Overview
 
-4/19/15
-Milestone2 contains a racket file called menu-bar.rkt, first of all it displays the menu bar, which adds functionalities such as cut, copy, paste, select all, delete to the frame. Also it adds functionalities such as changing the font size, style, color, alignment, weight and underline. Menu items it adds are, File, Edit, Font and Help. Now the user can interact with the NoteRad application. Now functionalities such as New, Open, Save, Save As, Exit and About NoteRad has to be implemented in the future. 
+Our end-product will be a text editing application that will provide the following functionality: saving, opening, and creating new text files, copyying/pasting text into the application, and word wrapping.
+
+Screenshot
+
+(insert a screenshot here. You may opt to get rid of the title for it. You need at least one screenshot. Make it actually appear here, don't just add a link.)
+
+Here's a demonstration of how to display an image that's uploaded to this repo: screenshot showing env diagram
+
+Concepts Demonstrated
+
+Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient.
+
+Data abstraction is used to provide access to the elements of the RSS feed.
+The objects in the OpenGL world are represented with recursive data structures.
+Symbolic language processing techniques are used in the parser.
+External Technology and Libraries
+
+Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
+
+Favorite Lines of Code
+
+Mark (a team member)
+
+Each team member should identify a favorite line of code, expression, or procedure written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody? Remember code looks something like this:
+
+(map (lambda (x) (foldr compose functions)) data)
+Lillian (another team member)
+
+This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
+
+(let* ((expr (convert-to-regexp (read-line my-in-port)))
+             (matches (flatten
+                       (hash-map *words*
+                                 (lambda (key value)
+                                   (if (regexp-match expr key) key '()))))))
+  matches)
+Additional Remarks
+
+Anything else you want to say in your report. Can rename or remove this section.
+
+How to Download and Run
+You may want to link to your latest release for easy downloading by people (such as Mark).
+
+Include what file to run, what to do with that file, how to interact with the app when its running, etc.
