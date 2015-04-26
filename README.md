@@ -34,6 +34,10 @@ This expression opens a save dialog window. It demonstrates the concept of data 
 
 (send editor save-file
                        (send editor get-filename) 'text)
+Muthuraman Lakshmanan
+Appends menu items to menu to implement a standard set of font-manipulation operations, such as changing the font face or style. This expression shows the notion of working on broad ideas and not worrying about the nitty-gritty details. This is done by using the racket documentation to perform the nitty-gritty function implementation and using those nitty gritty functions to build more sophisticated applications.   
+(append-editor-font-menu-items Font )
+
 
 Each team member should identify a favorite line of code, expression, or procedure written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody? Remember code looks something like this:
 
