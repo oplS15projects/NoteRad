@@ -47,6 +47,6 @@ This expression sets the text editor to wrap the text to fit in the size of the 
 
 How to Download and Run
 
-[Release]()
+[Release](https://github.com/oplS15projects/NoteRad/releases/tag/v1.3)
 
 Run noterad.rkt and go to town with the coolest text editor you've ever seen. Its operation is self explanatory. 
