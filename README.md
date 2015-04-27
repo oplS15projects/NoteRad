@@ -1,5 +1,3 @@
-FP7-webpage NoteRad
-This is a template for using your repo's README.md as your project web page. I recommend you copy and paste into your README file. Delete this line and the one above it, customize everything else. Make it look good!
 
 Authors
 
@@ -34,29 +32,20 @@ This expression opens a save dialog window. It demonstrates the concept of data 
 
 (send editor save-file
                        (send editor get-filename) 'text)
+                       
 Muthuraman Lakshmanan
-Appends menu items to menu to implement a standard set of font-manipulation operations, such as changing the font face or style. This expression shows the notion of working on broad ideas and not worrying about the nitty-gritty details. This is done by using the racket documentation to perform the nitty-gritty function implementation and using those nitty gritty functions to build more sophisticated applications.   
+
+Appends menu items to menu to implement a standard set of font-manipulation operations, such as changing the font face or style. This expression shows the notion of working on broad ideas and not worrying about the nitty-gritty details. This is done by using the racket documentation to perform the nitty-gritty function implementation and using those nitty gritty functions to build more sophisticated applications.  
+ 
 (append-editor-font-menu-items Font )
 
+Ajay Kumar
 
-Each team member should identify a favorite line of code, expression, or procedure written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody? Remember code looks something like this:
+This expression sets the text editor to wrap the text to fit in the size of the current window frame. It demonstrates the notion of data abstraction, when a library function supplied to the programmer hides the implementation details. 
 
-(map (lambda (x) (foldr compose functions)) data)
-Lillian (another team member)
-
-This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
-
-(let* ((expr (convert-to-regexp (read-line my-in-port)))
-             (matches (flatten
-                       (hash-map *words*
-                                 (lambda (key value)
-                                   (if (regexp-match expr key) key '()))))))
-  matches)
-Additional Remarks
-
-Anything else you want to say in your report. Can rename or remove this section.
+(send editor auto-wrap #t)
 
 How to Download and Run
-You may want to link to your latest release for easy downloading by people (such as Mark).
+[Release]()
 
-Include what file to run, what to do with that file, how to interact with the app when its running, etc.
+Run noterad.rkt and go to town with the coolest text editor you've ever seen. Its operation is self explanatory. 
