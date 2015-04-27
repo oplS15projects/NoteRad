@@ -46,6 +46,7 @@ This expression sets the text editor to wrap the text to fit in the size of the 
 (send editor auto-wrap #t)
 
 How to Download and Run
+
 [Release]()
 
 Run noterad.rkt and go to town with the coolest text editor you've ever seen. Its operation is self explanatory. 
